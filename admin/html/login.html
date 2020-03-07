@@ -1,0 +1,61 @@
+<html lang="en">
+<?php 
+    include('../php/server.php');
+?>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stonehill</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+</head>
+
+<body>
+    <ion-header>
+        <ion-toolbar color="danger">
+            <ion-title>
+                stonehillHack.
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content color="black">
+        <ion-grid>
+
+            <ion-row class="ion-text-center ion-justify-content-center ion-align-items-center">
+                <ion-col size="4">
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-title>Login</ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <p><?php include('../php/errors.php'); ?></p>
+                            <form method="post" action="../php/placeholders/login.php">
+                                <ion-item>
+                                    <ion-label position="floating">username</ion-label>
+                                    <ion-input id="username" name="username"></ion-input>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label position="floating">password</ion-label>
+                                    <ion-input type="password" id="password" name="pass"></ion-input>
+                                </ion-item>
+                                <br>
+                                <button style="background-color: transparent;" type="submit" name="loginUser">
+                                    <ion-button color="danger">Login</ion-button>
+                                </button>
+                            </form>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </ion-content>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+</body>
+
+</html>

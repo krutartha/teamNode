@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<?php include('../php/server.php') ?>
+<?php include('../php/placeholders/logout.php') ?>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stonehill</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    </div>
+
+    <ion-content>
+        <br>
+        <br>
+        <form autocomplete="off">
+            <ion-row class="ion-text-center ion-justify-content-center ion-align-items-center">
+                <ion-icon style="font-size:250px;" name="clipboard-outline"></ion-icon>
+            </ion-row>
+            <ion-item>
+                <ion-label position="fixed">Upload Form:</ion-label>
+                <ion-input type="file" accept="pdf/*" id="upload"></ion-input>
+                </ion-input>
+            </ion-item>
+            <br>
+            <br>
+            <ion-row class="ion-text-center ion-justify-content-center ion-align-items-center">
+                <button style="background-color: transparent;" type="submit" name="saveChanges">
+                    <ion-button>
+                        Submit
+                    </ion-button>
+                </button>
+            </ion-row>
+
+        </form>
+
+    </ion-content>
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script src="../js/navbar.js"></script>
+
+
+</body>
+
+</html>
